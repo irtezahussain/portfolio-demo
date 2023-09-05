@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style-hiringform.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contact Form</title>
+</head>
+<body class="bg-gradient-to-b from-slate-800 to bg-slate-700">
+
+    <header id="head" >
+        <nav class="px-4 py-5 my-2 mx-2 bg-slate-400 flex rounded-xl ">
+            <div >
+                <img src="/Media/reallogo1.png" alt="Logo" class=" h-10 w-40">
+            </div>
+            <div class="nav-list flex px-96">
+                <ul class="py-2 px-3 cursor-pointer hover:border-b-2 hover:border-white font-semibold"><a href="/HTML/index.html">Home</a></ul>
+                <ul class="px-3 py-2 cursor-pointer hover:border-b-2 hover:border-white font-semibold"><a href="/HTML/Hiringform.html">Contact</a></ul>
+                <ul class="px-3 py-2 cursor-pointer hover:border-b-2 hover:border-white font-semibold"><a href="#Introduction">Introduction</a></ul>
+                <ul class="px-3 py-2 cursor-pointer hover:border-b-2 hover:border-white font-semibold"><a href="#">Resume</a></ul>
+                <ul class="px-3 py-2 cursor-pointer hover:border-b-2 hover:border-white font-semibold"><select name="Social Handles" id="social-media" class="bg-slate-400 ">
+                    <option value="label" selected class="font-sans">Social-Media</option>
+                    <option value="insta" class="selector font-sans"><a href="https://instagram.com/m.irtezahussain?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a></option>
+                    <option value="fb" class="selector font-sans"><a href="https://www.facebook.com/irteza.hussain.927/">Facebook</a></option>
+                    <option value="linkedin" class="selector font-sans"><a href="#">LinkedIn</a></option>
+                </select></ul>
+            </div>
+        </nav>
+    </header>
+
+    <form action="backend.php">
+        
+        <div class="flex flex-wrap mx-auto w-2/5 ">
+            <h1 class=" px-52 font-sans font-bold text-blue-500 text-lg border-b-2  border-blue-500 rounded-lg">Hiring/Querie Form</h1>
+        </div>
+
+        <br>
+
+        <div class="mx-auto w-1/2 border-2 rounded-3xl">
+            <div class="flex mx-auto w-56 ">
+                <div class="font-bold text-blue-500 border-b-2 px-5 border-blue-500">
+                    <h4 >Hiring or Querie:</h4>
+                </div>
+            </div>
+
+            <div class=" py-5 flex flex-wrap flex-row mx-auto w-56">
+                <div class="font-sans font-semibold text-white  basis-1/2">
+                    Hiring <input type="radio" name="form" id="hirebox" class="cursor-pointer" >
+                </div>
+                <div class="font-sans font-semibold text-white basis-1/2 ">
+                    Querie <input type="radio" name="form" id="quebox" class="cursor-pointer">
+                </div>
+                <hr>
+            </div>
+
+            <div class="flex mx-auto w-56">
+                <div class="font-bold text-blue-500 border-b-2 px-5 border-blue-500">
+                    <h4>Personal Information</h4>
+                </div>
+            </div>
+
+            <div class="py-5 px-3 flex flex-wrap flex-row ">
+                <div class="basis-1/3 font-sans font-semibold text-white">
+                    Full Name: <input type="text" name="fullname" id="fname" class="text-black px-1 rounded-lg">
+                </div>
+                
+                <div class="basis-1/3 font-sans font-semibold text-white">
+                    Designation: <input type="text" name="designation" id="designation" class="text-black px-1 rounded-lg">
+                </div>
+
+                <div class="basis-1/3  font-sans font-semibold text-white">
+                    Company: <input type="text" name="company" id="company" class="text-black px-1 rounded-lg">
+                </div>
+
+                <div class=" mt-6 font-sans font-semibold text-white mx-auto w-2/6 ">
+                    Date: <input type="date" name="daterequest" id="date" class="text-black px-1 rounded-lg">
+                </div>
+                
+                <div class="basis-1/4  mt-6 font-sans font-semibold text-white">
+                    Requests: <br><textarea name="req" id="reqs" cols="70" rows="2" class="text-black px-9 rounded-lg"></textarea>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="flex mx-auto w-56 ">
+                <div class="font-bold text-blue-500 border-b-2 px-5 border-blue-500">
+                    <h4>Contact Information</h4>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap flex-row py-5 px-3">
+                <div class="basis-1/3  font-sans font-semibold text-white">
+                    Contact #:<input type="text" maxlength="15" name="daterequest" id="contact" class="text-black rounded-lg">
+                </div>
+
+                <div class="basis-1/3  font-sans font-semibold text-white">
+                    Email:<input type="email" name="email" id="email" class="text-black rounded-lg">
+                </div>
+
+                <div class="basis-1/3  font-sans font-semibold text-white ">
+                    Domain: <input type="text" name="domainname" id="domainname" class="text-black rounded-lg">
+                </div>
+
+                <div class="mx-auto w-1/3 py-5 font-sans font-semibold text-white">
+                    <label for="City" >City: </label>
+                    <select name="domaincity" id="dom_city" class="text-black rounded-xl">
+                        <option value=" karachi" class="text-black">Karachi</option>
+                        <option value="islamabad" class="text-black">Islamabad</option>
+                        <option value="lahore" class="text-black">Lahore</option>
+                        <option value="peshawar" class="text-black">Peshawar</option>
+                    </select>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="flex flex-wrap flex-row px-2 py-2">
+                <div class="">
+                    <input type="submit" value="Submit Now!" class="border-2 px-2 font-semibold rounded-2xl cursor-pointer hover:bg-white hover:text-black">
+                </div>
+                <div class="px-2">
+                    <input type="reset" value="Reset Now!" class="border-2 px-2 font-semibold rounded-2xl cursor-pointer hover:bg-white hover:text-black">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="block py-5">
+        <div class="mx-auto w-1/2 text-sm text-white">
+            *Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ex similique, eos at ullam libero optio maxime quas deserunt error!
+        </div>
+    </div>
+
+
+    <footer class="bg-slate-400 flex mx-2 my-2 rounded-lg">
+        <nav id="foot-nav">
+            <span class="footer px-10 hover:border-b-2 hover:border-white text-sm rounded-lg" id="author-footer">Developed by: Muhammad Irteza Hussain</span>
+            <span class="footer px-12 text-sm hover:border-b-2 hover:border-white rounded-lg" id="mail-footer">    Mail: irtezahussain04@gmail.com</span>
+            <span class="footer px-60 font-bold" id="copyrights-footer">   Copyrights Protected.</span>
+        </nav>
+    </footer>
+
+</body>
+</html>

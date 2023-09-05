@@ -1,0 +1,21 @@
+#animation{
+    animation-name: slideToLeft;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: ease;
+
+}
+
+@keyframes slideToLeft{
+    from{
+        transform: translateX(-400px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
